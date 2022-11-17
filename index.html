@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-secondary">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6 offset-md-3">
+                <div class="card shadow rounded">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5>Ma banque</h5>
+                            <h4>
+                                <span id="credit"></span>
+                                DH
+                            </h4>
+                        </div>
+                        <form>
+                            <div class="form-group mb-3">
+                                <label for="retrait">Somme à retirer</label>
+                                <input type="number" id="retrait" class="form-control"
+                                    placeholder="Entrer votre montant à retirer">
+                            </div>
+                            <div class="mb-2"><span id="error"></span></div>
+                            <div class="form-group mb-3">
+                                <button class="btn btn-success w-100">RETRAIT</button>
+                            </div>
+                            <button  type="button" class="btn btn-primary rounded w-100">Réintialiser</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
